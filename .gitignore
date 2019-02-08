@@ -260,3 +260,5 @@ paket-files/
 __pycache__/
 *.pyc
 PrettyTest/PrettyTest\.xml
+
+test/PrettyTest\.Test/PrettyTest\.Test\.xml
