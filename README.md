@@ -13,12 +13,9 @@ This will be completed once available in a packet managet such as [Nuget](https:
 Currently converting underscores to spaces is supported.
 
 ``` csharp
-
+// Test explorer name: 'Some test that does something fun'
 public void Some_test_that_does_something_fun()
 {
     // Code and things.
 }
-
 ```
-
-In test explorer this test case would end up being 'Some test that does something fun'
