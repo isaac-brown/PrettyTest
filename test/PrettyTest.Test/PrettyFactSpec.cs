@@ -1,4 +1,4 @@
-// <copyright file="PrettyFactTests.cs" company="Isaac Brown">
+// <copyright file="PrettyFactSpec.cs" company="Isaac Brown">
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,8 +10,11 @@ namespace PrettyTest.Test
     /// <summary>
     /// Test Cases for the <see cref="PrettyFactAttribute"/>.
     /// </summary>
-    public class PrettyFactTests
+    public class PrettyFactSpec
     {
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
+#pragma warning disable SA1600 // Elements must be documented
+
         [Fact]
         public void Given_a_new_PrettyFactAttribute_When_testMethodName_is_null_Then_an_AgrumentNullException_is_thrown()
         {
