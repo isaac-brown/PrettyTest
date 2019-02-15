@@ -5,8 +5,13 @@
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <RepositoryType>Github</RepositoryType>
     <PackageTags>Pretty,Unit Test,Display Name,XUnit</PackageTags>
-    <Description>PrettyTest provides</Description>
+    <Description>PrettyTest provides nicer test explorer names for XUnit test cases. Unit test names are transformed using conventions to be more readable. Heavly inspired by the blogpost https://bitwiseguy.wordpress.com/2015/11/23/creating-readable-xunit-test-method-names-automatically/.</Description>
     <Authors>Isaac Brown</Authors>
+    <Copyright>Isaac Brown 2019</Copyright>
+    <PackageProjectUrl>https://github.com/isaac-brown/PrettyTest</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/isaac-brown/PrettyTest</RepositoryUrl>
+    <PackageLicenseUrl>https://github.com/isaac-brown/PrettyTest/blob/master/LICENCE.txt</PackageLicenseUrl>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
