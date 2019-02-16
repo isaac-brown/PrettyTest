@@ -6,7 +6,7 @@ The gist of it is that underscores in method names will be replaced by spaces. R
 
 ## Installation
 
-This will be completed once available in a packet managet such as [Nuget](https://www.nuget.org/).
+This will be completed once available in a packet manager such as [NuGet](https://www.nuget.org/).
 
 ## Features
 
