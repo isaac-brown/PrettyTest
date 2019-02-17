@@ -15,7 +15,11 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>C:\Users\Isaac Laptop\Desktop\Github\PrettyTest\PrettyTest\PrettyTest.xml</DocumentationFile>
+    <DocumentationFile>..\..\docs\PrettyTest.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>..\..\docs\PrettyTest.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
