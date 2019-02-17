@@ -12,6 +12,7 @@
     <RepositoryUrl>https://github.com/isaac-brown/PrettyTest</RepositoryUrl>
     <PackageLicenseUrl>https://github.com/isaac-brown/PrettyTest/blob/master/LICENCE.txt</PackageLicenseUrl>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <IsPackable>true</IsPackable>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
