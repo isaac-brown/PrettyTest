@@ -17,7 +17,7 @@ namespace PrettyTest.Test
 #pragma warning disable SA1600 // Elements must be documented
 
         [Fact]
-        public void Given_a_new_PrettyFactAttribute_When_testMethodName_is_null_Then_an_AgrumentNullException_is_thrown()
+        public void Given_a_new_PrettyFactAttribute_When_testMethodName_is_null_Then_an_ArgumentNullException_is_thrown()
         {
             // Given.
             PrettyFactAttribute attribute;
@@ -35,7 +35,7 @@ namespace PrettyTest.Test
         [InlineData("\t")]
         [InlineData("   ")]
         [InlineData("    ")]
-        public void Given_a_new_PrettyFactAttribute_When_testMethodName_is_blank_Then_an_AgrumentException_is_thrown(string testMethodName)
+        public void Given_a_new_PrettyFactAttribute_When_testMethodName_is_blank_Then_an_ArgumentException_is_thrown(string testMethodName)
         {
             // Given.
             PrettyFactAttribute attribute;
