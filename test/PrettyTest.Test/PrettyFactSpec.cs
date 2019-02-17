@@ -5,6 +5,7 @@
 namespace PrettyTest.Test
 {
     using System;
+    using FluentAssertions;
     using Xunit;
 
     /// <summary>
@@ -25,7 +26,7 @@ namespace PrettyTest.Test
             Action testCode = () => attribute = new PrettyFactAttribute(null);
 
             // Then.
-            Assert.Throws<ArgumentNullException>("testMethodName", testCode);
+            testCode.Should().Throw<ArgumentNullException>();
         }
 
         [Theory]
@@ -43,7 +44,7 @@ namespace PrettyTest.Test
             Action testCode = () => attribute = new PrettyFactAttribute(testMethodName);
 
             // Then.
-            Assert.Throws<ArgumentException>("testMethodName", testCode);
+            testCode.Should().Throw<ArgumentException>().WithMessage("Cannot be blank*testMethodName");
         }
 
         /// <summary>
@@ -61,7 +62,7 @@ namespace PrettyTest.Test
             attribute = new PrettyFactAttribute(testMethodName);
 
             // Then.
-            Assert.Equal(expected: testMethodName, actual: attribute.DisplayName);
+            attribute.DisplayName.Should().BeEquivalentTo(testMethodName);
         }
 
         /// <summary>
@@ -81,7 +82,7 @@ namespace PrettyTest.Test
             attribute = new PrettyFactAttribute(testMethodName);
 
             // Then.
-            Assert.Equal(expected: "Given X When Y Then Z", actual: attribute.DisplayName);
+            attribute.DisplayName.Should().BeEquivalentTo("Given X When Y Then Z");
         }
     }
 }
