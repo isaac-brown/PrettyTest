@@ -3,6 +3,6 @@
 # Runs all tests and builds the solution.
 
 Set-Location ..\
-dotnet build
+dotnet build -c Release
 Set-Location .\test\PrettyTest.Test\
 dotnet test
